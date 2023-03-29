@@ -98,8 +98,9 @@ body {
   align-items: center;
   gap: 8px;
   border: unset;
-  width: 200px;
-  height: 54px;
+  /* width: 200px;
+  height: 54px; */
+  padding: 1rem 2rem;
   color: var(--color);
   background-color: var(--start-game-button-background-color);
   border-radius: 8px;
@@ -396,5 +397,11 @@ footer {
 
 .player-name{
   font-size: 16px;
+}
+
+.start-game-button,
+.start-game-button-multiple {
+  font-size: 12px;
+  padding: 1rem;
 }
 }
