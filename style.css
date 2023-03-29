@@ -404,4 +404,7 @@ footer {
   font-size: 12px;
   padding: 1rem;
 }
+.player-card{
+  margin: 0 2rem;
+}
 }
