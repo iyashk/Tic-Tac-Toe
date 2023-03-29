@@ -369,3 +369,32 @@ footer {
 .display-result.hidden{
   display: none;
 }
+
+
+@media screen and (max-width:576px) {
+  .game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 82px);
+  grid-template-rows: repeat(3, 82px);
+  gap: 12px;
+  justify-content: center;
+  background-color: var(--gameboard-background-color);
+  border-radius: 18px;
+  padding: 12px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.board-button{
+  font-size: 3rem;
+}
+.main-page header {
+  font-size: 2rem;
+}
+.player-card > p:first-child {
+  font-size: 10px;
+}
+
+.player-name{
+  font-size: 12px;
+}
+}
