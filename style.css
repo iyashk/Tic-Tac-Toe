@@ -195,7 +195,7 @@ main{
   color: var(--gameboard-button-text-color);
   transition-duration: 0.3s;
   user-select: none;
-  text-transform: uppercase;
+
 }
 
 .cell:hover {
@@ -373,7 +373,7 @@ footer {
 
 
 @media screen and (max-width:576px) {
-  .game-board {
+  .game-board{
   display: grid;
   grid-template-columns: repeat(3, 82px);
   grid-template-rows: repeat(3, 82px);
@@ -384,27 +384,53 @@ footer {
   padding: 12px;
   width: fit-content;
   margin: 0 auto;
-}
-.board-button{
-  font-size: 3rem;
-}
-.main-page header {
-  font-size: 2rem;
-}
-.player-card > p:first-child {
-  font-size: 12px;
-}
-
-.player-name{
-  font-size: 16px;
-}
-
-.start-game-button,
-.start-game-button-multiple {
-  font-size: 12px;
-  padding: 1rem;
-}
-.player-cards{
-  margin: 0 2rem;
-}
+  }
+  .second-page .gameboard .whole{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+  .cell{
+    width: 82px;
+    height: 82px;
+    font-size: 3rem;
+  }
+  .board-button {
+    font-size: 3rem;
+  }
+  
+  .main-page header {
+    font-size: 2rem;
+  }
+  .second-page header {
+    font-size: 2rem;
+  }
+  
+  .player-card > p:first-child {
+    font-size: 12px;
+  }
+  .second-page .gameboard .player-cards .player-card .computer-name {
+    font-size: 12px;
+    font-weight: bolder !important;
+  }
+  
+  .player-name {
+    font-size: 16px;
+  }
+  
+  .start-game-button,
+  .start-game-button-multiple {
+    font-size: 12px;
+    padding: 1rem;
+  }
+  
+  .player-cards {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 100%;
+  }
 }
